@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 175px;
+}
+
+.content__welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 195px 0 0 0;
+}
+
+.welcome__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.welcome__sign {
+    display: flex;
+    padding: 58px 0 0 0;
+}
+
+.welcome__side.-right {
+    align-items: flex-end;
+}
