@@ -1,29 +1,40 @@
 .content {
     display: flex;
     flex-direction: column;
-    padding: 28px 175px;
 }
 
 .content__welcome {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
-    padding: 195px 0 0 0;
 }
 
-.welcome__side {
+.content__dev-notes {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     flex: 1;
 }
 
-.welcome__sign {
+.content__controls {
     display: flex;
-    padding: 58px 0 0 0;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding: 29px 38px;
 }
 
-.welcome__side.-right {
+.content__title {
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
+}
+
+.content__sign {
+    display: flex;
+    padding: 46px 0;
+}
+
+.content__follow {
+    display: flex;
+    justify-content: flex-end;
 }

@@ -7,4 +7,9 @@ body {
   background: #1B1D1F;
 }
 
+@font-face {
+  font-family: 'DatCub';
+  src: local('DatCub'), url(fonts/DatCub-Regular.woff) format('woff');
+}
+
 @import url("styles/base.css");

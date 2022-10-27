@@ -1,6 +1,7 @@
 import React from "react";
-import DevIcon from "../../assets/devnotes.png"
-import GitHubIcon from "../../assets/GitHub.png"
+import DevNotes from "../../assets/devnotes.png";
+import Side from "../../assets/side 1.png"
+import Vector from "../../assets/vector.png"
 import './welcome-page.css';
 
 export default class MainComponent extends React.Component {
@@ -8,21 +9,32 @@ export default class MainComponent extends React.Component {
         return (
             <div className="content">
                 <div className="content__welcome">
-                    <div className="welcome__side">
-                        <img src={DevIcon} alt="DevIcon" />
-                        <h1 className="medium-text">Your lovely code manager</h1>
-                        <div className="welcome__sign">
-                            <button className="sign-button">
-                                <h2 className="sign-text">Sign Up</h2>
-                            </button>
-                            <button className="sign-button -in">
-                                <h2 className="sign-text">Sign Out</h2>
-                            </button>
-                        </div>
+                    <div className="content__dev-notes">
+                        <img src={DevNotes} alt="dev" />
+                        <img src={Side} alt="side" />
+                        <h1 className="huge-text">BETA 1.0</h1>
                     </div>
-                    <div className="welcome__side -right">
-                        <h1 className="big-text">Useful free open-source code keeper From developers for developers</h1>
-                        <img src={GitHubIcon} alt="GitHubIcon"/>
+                    <div className="content__controls">
+                        <div className="content__title">
+                            <h1 className="big-text">Useful free open-source code keeper From developers for developers</h1>
+                            <div className="content__sign">
+                                <button className="sing-in">
+                                    <h2 className="sign-text">Sign In</h2>
+                                </button>
+                                <button className="sing-up">
+                                    <h2 className="sign-text">Sign Up</h2>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="content__follow">
+                            <div className="follow-us">
+                                <h2 className="medium-text">follow us</h2>
+                            </div>
+                            <img className="vector" src={Vector} alt="Vector" />
+                            <div className="github">
+                                <h2 className="medium-text">Github</h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
