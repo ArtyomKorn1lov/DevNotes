@@ -16,7 +16,7 @@ export default class MainComponent extends React.Component {
                     </div>
                     <div className="content__controls">
                         <div className="content__title">
-                            <h1 className="big-text">Useful free open-source code keeper From developers for developers</h1>
+                            <h1 className="big-text">Useful free open-source code keeper From developers to developers</h1>
                             <div className="content__sign">
                                 <button className="sing-in">
                                     <h2 className="sign-text">Sign In</h2>

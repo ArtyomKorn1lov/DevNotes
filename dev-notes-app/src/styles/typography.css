@@ -34,3 +34,21 @@
     line-height: 55px;
     color: #6B6868;
 }
+
+.not-found-text {
+    font-family: 'DatCub', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 147px;
+    color: #FFFFFF;
+}
+
+.micro-text {
+    font-family: 'DatCub', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
