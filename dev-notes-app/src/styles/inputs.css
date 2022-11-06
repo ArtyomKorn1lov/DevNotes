@@ -6,16 +6,29 @@
 }
 
 .sing-up:hover {
-    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #949494, #949494,);
+    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #949494, #949494, );
 }
 
 .sing-in {
     min-width: 180px;
     background: transparent;
-    border: 0; 
+    border: 0;
     padding: 16px 45px;
 }
 
 .sing-in:hover {
-    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #949494, #949494,);
+    background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #949494, #949494, );
+}
+
+.primary-input {
+    padding: 16px 26px;
+    font-family: 'DatCub', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #D9D9D9;
+    width: 330px;
+    background: transparent;
+    border: 2px solid #D9D9D9;
 }

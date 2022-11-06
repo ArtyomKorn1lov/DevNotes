@@ -29,6 +29,12 @@
     align-items: flex-end;
 }
 
+.content__sign-input {
+    display: flex;
+    flex-direction: column;
+    padding: 46px 0;
+}
+
 .content__sign {
     display: flex;
     padding: 46px 0;
