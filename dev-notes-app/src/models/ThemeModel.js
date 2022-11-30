@@ -1,4 +1,4 @@
-export class ThemeModel {
+export default class ThemeModel {
     constructor(_id, _slug, _title) {
         this.id = _id;
         this.slug = _slug;

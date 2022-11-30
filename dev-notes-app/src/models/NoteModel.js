@@ -1,4 +1,4 @@
-export class NoteModel {
+export default class NoteModel {
     constructor(_id, _author, _theme, _title, _text, _pub_date) {
         this.id = _id;
         this.author = _author;

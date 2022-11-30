@@ -1,4 +1,4 @@
-export class UserInfoModel {
+export default class UserInfoModel {
     constructor(_id, _password, _last_login, _is_superuser, _username, _first_name, _last_name, _email, _is_staff, _is_active, _date_joined, _groups, _user_permissions) {
         this.id = _id;
         this.password = _password;

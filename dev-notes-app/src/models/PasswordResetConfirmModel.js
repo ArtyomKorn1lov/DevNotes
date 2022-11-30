@@ -1,4 +1,4 @@
-export class PasswordResetConfirmModel {
+export default class PasswordResetConfirmModel {
     constructor(_uid, _token, _new_password) {
         this.uid = _uid;
         this.token = _token;

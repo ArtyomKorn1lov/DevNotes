@@ -1,7 +1,11 @@
 import React from "react";
+import axios from 'axios';
 import DevNotes from "../../assets/devnotes.png";
-import Side from "../../assets/side 1.png"
-import Vector from "../../assets/vector.png"
+import Side from "../../assets/side 1.png";
+import Vector from "../../assets/vector.png";
+import NoteModel from "../../models/NoteModel.js";
+import TokenObtainPairModel from "../../models/TokenObtainPairModel.js";
+import AccountService from "../../services/account.service.js"
 import './welcome-page.css';
 
 export default class MainComponent extends React.Component {
@@ -10,10 +14,13 @@ export default class MainComponent extends React.Component {
         super(props);
         this.state = {
             authState: false,
-            regState: false
+            regState: false,
+            registerModel: new TokenObtainPairModel()
         };
+        this.targetRoute = "http://127.0.0.1:8000/api/v1/notes/";
         this.authClick = this.authClick.bind(this);
         this.regClick = this.regClick.bind(this);
+        this.register = this.register.bind(this);
     }
 
     authClick() {
@@ -24,13 +31,23 @@ export default class MainComponent extends React.Component {
         this.setState({ authState: false, regState: true });
     }
 
+    register() {
+        const register = new TokenObtainPairModel("123", "123");
+        AccountService.setRegisterModel(register);
+        console.log(AccountService.registerModel);
+        axios.get(this.targetRoute)
+        .then((resp) => {
+            console.log(resp);
+        });
+    }
+
     render() {
         return (
             <div className="content">
                 <div className="content__welcome">
                     <div className="content__dev-notes">
-                        <img src={DevNotes} alt="dev" />
-                        <img src={Side} alt="side" />
+                        <img className="devnotes-image" src={DevNotes} alt="dev" />
+                        <img className="devnotes-image" src={Side} alt="side" />
                         <h1 className="huge-text">BETA 1.0</h1>
                     </div>
                     <div className="content__controls">
@@ -69,6 +86,9 @@ export default class MainComponent extends React.Component {
                                 </div>
                             }
                         </div>
+                        <button onClick={this.register} className="sing-up">
+                            <h2 className="sign-text">Check Request</h2>
+                        </button>
                         <div className="content__follow">
                             {!this.state.authState && !this.state.regState &&
                                 <div className="follow-us">

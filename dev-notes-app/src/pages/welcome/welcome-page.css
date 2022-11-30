@@ -34,3 +34,7 @@
     padding: 23px 0;
     justify-content: flex-end;
 }
+
+.devnotes-image {
+    height: 100vh;
+}
